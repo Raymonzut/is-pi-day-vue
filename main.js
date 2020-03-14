@@ -8,6 +8,7 @@ const is_pi_day = is_right_day && is_right_month;
 var app = new Vue({
   el: '#app',
   data: {
-    message: "It is" + (is_pi_day ? " " : " not ") + "pi day"
+    message: "It is" + (is_pi_day ? " " : " not ") + "pi day",
+    pi: get_pi(),
   },
 })
